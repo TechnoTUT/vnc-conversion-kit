@@ -6,6 +6,6 @@ RUN apt-get update && \
 
 EXPOSE 6080
 
-ENTRYPOINT [ "websockify", "-D", "--web", "/usr/share/novnc/"]
+ENTRYPOINT [ "websockify", "--web", "/usr/share/novnc/"]
 
 CMD ["6080", "localhost:5900"]
